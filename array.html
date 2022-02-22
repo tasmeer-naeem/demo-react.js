@@ -1,0 +1,29 @@
+<p  id="showdata"></p>
+
+<script>
+   /* const oldarr = ['oldarray','mapmethod','newarray'];   
+    const newarr=oldarr.map(function(currentvalue,index,array){
+        //return index + " : " +currentvalue;
+        return array;
+        //console.log(array)
+    }
+    );  
+    console.log(newarr); */
+
+    const olddata=[
+        {id:'1',name:'tasmeer',course:'react'},
+        {id:'2',name:'aiman',course:'node'},
+        {id:'3',name:'tajwar',course:'html'},
+        {id:'4',name:'haroon',course:'java'},
+        {id:'5',name:'ahmer',course:'css'},
+    ]
+    
+    const newdata=olddata.map((currentvalue)=>{
+        //return (currentvalue.name)
+        //return (currentvalue.course)
+        return `my name is ${currentvalue.name}. my course is ${currentvalue.course}  <br>`;
+    });
+    //console.log(newdata);
+    //document.getElementById('showdata').innerHTML=newdata;
+</script>
+
